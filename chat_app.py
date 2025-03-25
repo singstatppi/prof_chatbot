@@ -923,28 +923,28 @@ class ChatInterface:
 
     def run(self):
         """Main method to run the Streamlit interface."""
-        st.logo("images/icons/prof_logo_w_line.png")
-        st.markdown(
-                """
-                <style>
-                    img[alt="Logo"] {
-                        height: 100px !important;
-                    }
-                </style>
-                """,
-                unsafe_allow_html=True,
-            )
-        st.sidebar.page_link("chat_app.py", label="Home")
-        st.sidebar.page_link("pages/about_us.py", label="About Us")
-        st.sidebar.page_link("pages/contact_us.py", label="Contact Us")
+        # st.logo("images/icons/prof_logo_w_line.png")
+        # st.markdown(
+        #         """
+        #         <style>
+        #             img[alt="Logo"] {
+        #                 height: 100px !important;
+        #             }
+        #         </style>
+        #         """,
+        #         unsafe_allow_html=True,
+        #     )
+        # st.sidebar.page_link("chat_app.py", label="Home")
+        # st.sidebar.page_link("pages/about_us.py", label="About Us")
+        # st.sidebar.page_link("pages/contact_us.py", label="Contact Us")
 
-        if not OPENAI_API_KEY:
-            st.error("Missing OpenAI API key. Please check your configuration.")
-            return
+        # if not OPENAI_API_KEY:
+        #     st.error("Missing OpenAI API key. Please check your configuration.")
+        #     return
 
         
-        st.title("Price Researcher Optimised for Friends")
-        st.markdown("<h11 style='text-align: left; color: grey;'>Hi, my name is Price Researcher Optimised for Friends (PROF). I am here to satisfy your curiosity about Service Producer Price Indices (SPPIs).<br/>To help me answer your questions better, please be as specific as possible. Feel free to ask away!😊</h11>", unsafe_allow_html=True)
+        # st.title("Price Researcher Optimised for Friends")
+        # st.markdown("<h11 style='text-align: left; color: grey;'>Hi, my name is Price Researcher Optimised for Friends (PROF). I am here to satisfy your curiosity about Service Producer Price Indices (SPPIs).<br/>To help me answer your questions better, please be as specific as possible. Feel free to ask away!😊</h11>", unsafe_allow_html=True)
 
         video_file = open('movie.mp4', 'rb')
         video_bytes = video_file.read()
