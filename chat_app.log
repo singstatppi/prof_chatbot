@@ -1,0 +1,33 @@
+2025-03-25 08:57:26,149 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-03-25 08:57:26,340 - INFO - Collection chunk_vector_store is not created.
+2025-03-25 08:57:26,341 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-03-25 08:57:26,345 - INFO - Collection longcontext_vector_store is not created.
+2025-03-25 08:57:54,907 - INFO - Collection chunk_vector_store is not created.
+2025-03-25 08:57:54,910 - INFO - Collection longcontext_vector_store is not created.
+2025-03-25 08:58:57,075 - INFO - Collection chunk_vector_store is not created.
+2025-03-25 08:58:57,079 - INFO - Collection longcontext_vector_store is not created.
+2025-03-25 08:58:58,704 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-25 08:59:00,029 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-25 08:59:08,002 - ERROR - utilities._extract_value_from_tag: Error extracting value from tag: list index out of range
+2025-03-25 08:59:13,259 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-03-25 08:59:13,595 - ERROR - Error retrieving context: 'PersistentData' object has no attribute 'max_seq_id'
+2025-03-25 08:59:15,610 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-25 09:00:19,914 - INFO - Collection chunk_vector_store is not created.
+2025-03-25 09:00:19,917 - INFO - Collection longcontext_vector_store is not created.
+2025-03-25 09:00:21,466 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-25 09:00:22,705 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-25 09:00:23,941 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-25 09:00:31,571 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-25 09:01:21,427 - INFO - Collection chunk_vector_store is not created.
+2025-03-25 09:01:21,431 - INFO - Collection longcontext_vector_store is not created.
+2025-03-25 09:01:22,683 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-25 09:01:24,140 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-25 09:01:30,846 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-03-25 09:01:36,220 - ERROR - Error retrieving context: 'PersistentData' object has no attribute 'max_seq_id'
+2025-03-25 09:07:27,947 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-03-25 09:07:28,381 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-03-25 09:07:40,536 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-25 09:07:41,523 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-25 09:07:46,684 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-03-25 09:07:48,525 - INFO - HTTP Request: POST https://api.cohere.com/v1/rerank "HTTP/1.1 200 OK"
+2025-03-25 09:07:52,241 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"

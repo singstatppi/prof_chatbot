@@ -9,7 +9,7 @@
             "name": "Python Debugger: Streamlit",
             "type": "debugpy",
             "request": "launch",
-            "program": "C:/Users/rongk/.conda/envs/vb_chatbot/Scripts/streamlit.exe",
+            "program": "/opt/anaconda3/envs/vb_chatbot/bin/streamlit",
             "args": [
                 "run",
                 "chat_app.py"
