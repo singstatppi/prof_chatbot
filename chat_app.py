@@ -829,7 +829,7 @@ class ChatInterface:
     """Streamlit-based chat interface."""
     
     def __init__(self):
-        self.chat_assistant = ChatAssistant()
+        # self.chat_assistant = ChatAssistant()
         self._initialize_session_state()
         
     def _initialize_session_state(self):
@@ -954,33 +954,33 @@ class ChatInterface:
         # df_list = []
 
         # df = pd.read_excel("1010_testquestions.xlsx")
-        prompt = st.chat_input("Ask me about economic indicators...")
-        if prompt:
-        # for prompt in df["Question"].tolist():
-            method_placeholder = st.empty()
-            #Start time
-            start_time = time.time()
+        # prompt = st.chat_input("Ask me about economic indicators...")
+        # if prompt:
+        # # for prompt in df["Question"].tolist():
+        #     method_placeholder = st.empty()
+        #     #Start time
+        #     start_time = time.time()
 
-            #tokens used
-            start_tokens = self.chat_assistant.tokens_used
+        #     #tokens used
+        #     start_tokens = self.chat_assistant.tokens_used
 
-            with method_placeholder.container():
-                with st.spinner("Generating response..."):                  
-                    response = self._process_user_input(prompt)
+        #     with method_placeholder.container():
+        #         with st.spinner("Generating response..."):                  
+        #             response = self._process_user_input(prompt)
 
             
-            #time_taken
-            time_taken = time.time() - start_time
-            #tokens used
-            tokens_used = self.chat_assistant.tokens_used - start_tokens
+        #     #time_taken
+        #     time_taken = time.time() - start_time
+        #     #tokens used
+        #     tokens_used = self.chat_assistant.tokens_used - start_tokens
 
-            #row_df = pd.DataFrame({"User Query": [prompt], "Response": [response], "Time Taken": [time_taken], "Tokens Used": [tokens_used]})
-            #df_list.append(row_df)
+        #     #row_df = pd.DataFrame({"User Query": [prompt], "Response": [response], "Time Taken": [time_taken], "Tokens Used": [tokens_used]})
+        #     #df_list.append(row_df)
         
-        # if df_list:
-        #     df_concat = pd.concat(df_list, ignore_index=True)
-        #     df_concat.to_csv("1010_test_response.csv", index=False)
-        self._display_chat_history()
+        # # if df_list:
+        # #     df_concat = pd.concat(df_list, ignore_index=True)
+        # #     df_concat.to_csv("1010_test_response.csv", index=False)
+        # self._display_chat_history()
         
 chat_interface = ChatInterface()
 chat_interface.run()
