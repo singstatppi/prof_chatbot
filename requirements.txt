@@ -1,0 +1,16 @@
+selenium
+pandas
+gdown
+pymupdf4llm
+langchain-community
+openai
+PyPDF2
+pillow
+chromadb
+langchain-openai
+langchain-chroma>=0.1.2
+streamlit
+langchain-experimental
+langchain-cohere
+tiktoken
+matplotlib
