@@ -14,5 +14,6 @@ langchain-cohere
 tiktoken
 matplotlib
 pydantic<2.0
+pysqlite3-binary
 chromadb 
 langchain
