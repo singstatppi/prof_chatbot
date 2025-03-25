@@ -829,7 +829,7 @@ class ChatInterface:
     """Streamlit-based chat interface."""
     
     def __init__(self):
-        # self.chat_assistant = ChatAssistant()
+        self.chat_assistant = ChatAssistant()
         self._initialize_session_state()
         
     def _initialize_session_state(self):
@@ -923,64 +923,59 @@ class ChatInterface:
 
     def run(self):
         """Main method to run the Streamlit interface."""
-        # st.logo("images/icons/prof_logo_w_line.png")
-        # st.markdown(
-        #         """
-        #         <style>
-        #             img[alt="Logo"] {
-        #                 height: 100px !important;
-        #             }
-        #         </style>
-        #         """,
-        #         unsafe_allow_html=True,
-        #     )
-        # st.sidebar.page_link("chat_app.py", label="Home")
-        # st.sidebar.page_link("pages/about_us.py", label="About Us")
-        # st.sidebar.page_link("pages/contact_us.py", label="Contact Us")
+        st.logo("images/icons/prof_logo_w_line.png")
+        st.markdown(
+                """
+                <style>
+                    img[alt="Logo"] {
+                        height: 100px !important;
+                    }
+                </style>
+                """,
+                unsafe_allow_html=True,
+            )
+        st.sidebar.page_link("chat_app.py", label="Home")
+        st.sidebar.page_link("pages/about_us.py", label="About Us")
+        st.sidebar.page_link("pages/contact_us.py", label="Contact Us")
 
-        # if not OPENAI_API_KEY:
-        #     st.error("Missing OpenAI API key. Please check your configuration.")
-        #     return
+        if not OPENAI_API_KEY:
+            st.error("Missing OpenAI API key. Please check your configuration.")
+            return
 
         
-        # st.title("Price Researcher Optimised for Friends")
-        # st.markdown("<h11 style='text-align: left; color: grey;'>Hi, my name is Price Researcher Optimised for Friends (PROF). I am here to satisfy your curiosity about Service Producer Price Indices (SPPIs).<br/>To help me answer your questions better, please be as specific as possible. Feel free to ask away!😊</h11>", unsafe_allow_html=True)
-
-        video_file = open('movie.mp4', 'rb')
-        video_bytes = video_file.read()
-
-        st.video(video_bytes)
+        st.title("Price Researcher Optimised for Friends")
+        st.markdown("<h11 style='text-align: left; color: grey;'>Hi, my name is Price Researcher Optimised for Friends (PROF). I am here to satisfy your curiosity about Service Producer Price Indices (SPPIs).<br/>To help me answer your questions better, please be as specific as possible. Feel free to ask away!😊</h11>", unsafe_allow_html=True)
 
         # df_list = []
 
         # df = pd.read_excel("1010_testquestions.xlsx")
-        # prompt = st.chat_input("Ask me about economic indicators...")
-        # if prompt:
-        # # for prompt in df["Question"].tolist():
-        #     method_placeholder = st.empty()
-        #     #Start time
-        #     start_time = time.time()
+        prompt = st.chat_input("Ask me about economic indicators...")
+        if prompt:
+        # for prompt in df["Question"].tolist():
+            method_placeholder = st.empty()
+            #Start time
+            start_time = time.time()
 
-        #     #tokens used
-        #     start_tokens = self.chat_assistant.tokens_used
+            #tokens used
+            start_tokens = self.chat_assistant.tokens_used
 
-        #     with method_placeholder.container():
-        #         with st.spinner("Generating response..."):                  
-        #             response = self._process_user_input(prompt)
+            with method_placeholder.container():
+                with st.spinner("Generating response..."):                  
+                    response = self._process_user_input(prompt)
 
             
-        #     #time_taken
-        #     time_taken = time.time() - start_time
-        #     #tokens used
-        #     tokens_used = self.chat_assistant.tokens_used - start_tokens
+            #time_taken
+            time_taken = time.time() - start_time
+            #tokens used
+            tokens_used = self.chat_assistant.tokens_used - start_tokens
 
-        #     #row_df = pd.DataFrame({"User Query": [prompt], "Response": [response], "Time Taken": [time_taken], "Tokens Used": [tokens_used]})
-        #     #df_list.append(row_df)
+            #row_df = pd.DataFrame({"User Query": [prompt], "Response": [response], "Time Taken": [time_taken], "Tokens Used": [tokens_used]})
+            #df_list.append(row_df)
         
-        # # if df_list:
-        # #     df_concat = pd.concat(df_list, ignore_index=True)
-        # #     df_concat.to_csv("1010_test_response.csv", index=False)
-        # self._display_chat_history()
+        # if df_list:
+        #     df_concat = pd.concat(df_list, ignore_index=True)
+        #     df_concat.to_csv("1010_test_response.csv", index=False)
+        self._display_chat_history()
         
 chat_interface = ChatInterface()
 chat_interface.run()
