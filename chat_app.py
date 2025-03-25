@@ -923,7 +923,7 @@ class ChatInterface:
 
     def run(self):
         """Main method to run the Streamlit interface."""
-        st.logo("images/icons/prof_logo_w_line.png")
+        # st.logo("images/icons/prof_logo_w_line.png")
         st.markdown(
                 """
                 <style>
