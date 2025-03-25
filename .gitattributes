@@ -1,2 +1,16 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+chunk_vector_store/chroma.sqlite3 filter=lfs diff=lfs merge=lfs -text
+chunk_vector_store/db8d71e8-a1ad-4680-840e-0693d23d0861/data_level0.bin filter=lfs diff=lfs merge=lfs -text
+chunk_vector_store/db8d71e8-a1ad-4680-840e-0693d23d0861/header.bin filter=lfs diff=lfs merge=lfs -text
+chunk_vector_store/db8d71e8-a1ad-4680-840e-0693d23d0861/index_metadata.pickle filter=lfs diff=lfs merge=lfs -text
+chunk_vector_store/db8d71e8-a1ad-4680-840e-0693d23d0861/length.bin filter=lfs diff=lfs merge=lfs -text
+chunk_vector_store/db8d71e8-a1ad-4680-840e-0693d23d0861/link_lists.bin filter=lfs diff=lfs merge=lfs -text
+longcontext_vector_store/chroma.sqlite3 filter=lfs diff=lfs merge=lfs -text
+longcontext_vector_store/14ef4b2c-a975-43da-bad2-757a69c9c8d9/link_lists.bin filter=lfs diff=lfs merge=lfs -text
+longcontext_vector_store/14ef4b2c-a975-43da-bad2-757a69c9c8d9/length.bin filter=lfs diff=lfs merge=lfs -text
+longcontext_vector_store/14ef4b2c-a975-43da-bad2-757a69c9c8d9/index_metadata.bin filter=lfs diff=lfs merge=lfs -text
+longcontext_vector_store/14ef4b2c-a975-43da-bad2-757a69c9c8d9/header.bin filter=lfs diff=lfs merge=lfs -text
+longcontext_vector_store/14ef4b2c-a975-43da-bad2-757a69c9c8d9/data_level0.bin filter=lfs diff=lfs merge=lfs -text
+longcontext_vector_store/14ef4b2c-a975-43da-bad2-757a69c9c8d9/index_metadata.pickle filter=lfs diff=lfs merge=lfs -text
+movie.mp4 filter=lfs diff=lfs merge=lfs -text
