@@ -975,8 +975,16 @@ class ChatInterface:
 
             #logging chats
 
-            chatlog_df = pd.DataFrame({"User Query": [prompt], "Response": [response], "Time Taken": [time_taken], "Tokens Used": [tokens_used]})
-            chatlog_df.to_csv("chatlog.csv", index=False, mode="a", header=False)
+            self.chat_assistant.logger.info("==============================================")
+            self.chat_assistant.logger.info(f"query uuid (random number): {uuid.uuid4()}")
+            self.chat_assistant.logger.info(f"User Query: {prompt}")
+            self.chat_assistant.logger.info(f"Response: {response}")
+            self.chat_assistant.logger.info(f"Time Taken: {time_taken:.2f} seconds")
+            self.chat_assistant.logger.info(f"Tokens Used: {tokens_used}")
+            self.chat_assistant.logger.info("==============================================")
+
+            #chatlog_df = pd.DataFrame({"User Query": [prompt], "Response": [response], "Time Taken": [time_taken], "Tokens Used": [tokens_used]})
+            #chatlog_df.to_csv("chatlog.csv", index=False, mode="a", header=False)
         
         # if df_list:
         #     df_concat = pd.concat(df_list, ignore_index=True)
