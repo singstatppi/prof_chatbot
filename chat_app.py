@@ -967,14 +967,16 @@ class ChatInterface:
                 with st.spinner("Generating response..."):                  
                     response = self._process_user_input(prompt)
 
-            
+
             #time_taken
             time_taken = time.time() - start_time
             #tokens used
             tokens_used = self.chat_assistant.tokens_used - start_tokens
 
-            #row_df = pd.DataFrame({"User Query": [prompt], "Response": [response], "Time Taken": [time_taken], "Tokens Used": [tokens_used]})
-            #df_list.append(row_df)
+            #logging chats
+
+            chatlog_df = pd.DataFrame({"User Query": [prompt], "Response": [response], "Time Taken": [time_taken], "Tokens Used": [tokens_used]})
+            chatlog_df.to_csv("chatlog.csv", index=False, mode="a", header=False)
         
         # if df_list:
         #     df_concat = pd.concat(df_list, ignore_index=True)
