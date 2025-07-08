@@ -21,4 +21,4 @@ COPY . .
 EXPOSE 8000
 
 # Run your chatbot.py script when container starts
-CMD ["python", "chatbot.py"]
+CMD ["python", "chat_app.py"]
