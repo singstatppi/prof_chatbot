@@ -1,5 +1,6 @@
 pysqlite3-binary
 chromadb==0.6.3
+posthog>=2.4.0,<6.0.0
 selenium
 pandas
 gdown
