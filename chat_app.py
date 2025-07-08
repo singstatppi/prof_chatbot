@@ -1,7 +1,3 @@
-import os
-os.environ["LANGCHAIN_TELEMETRY_ENABLED"] = "false"
-os.environ["OPENAI_TELEMETRY_DISABLED"] = "true"
-
 __import__('pysqlite3')
 import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
