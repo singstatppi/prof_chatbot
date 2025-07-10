@@ -27,11 +27,11 @@ from urllib.request import Request,urlopen
 import time
 
 # Load environment variables
-#load_dotenv("credentials.env")
-#OPENAI_API_KEY = os.getenv("OPENAI_KEY")
-#os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
+load_dotenv("credentials.env")
+OPENAI_API_KEY = os.getenv("OPENAI_KEY")
+os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+#OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 
 
